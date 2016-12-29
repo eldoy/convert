@@ -8,10 +8,6 @@ gem install convert
 ```
 or add to Gemfile.
 
-### Converters
-
-Some of the converters are taken from https://github.com/dejan/auto_html, but improved and cleaned up. This is just pure conversion, no special integration.
-
 ### Usage
 
 ```ruby
