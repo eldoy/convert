@@ -11,6 +11,7 @@ or add to Gemfile.
 ### Usage
 
 ```ruby
+# Require convert if you're not using bundler
 require 'convert'
 
 # URL to HTML link
