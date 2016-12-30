@@ -14,6 +14,24 @@ or add to Gemfile.
 # Require convert if you're not using bundler
 require 'convert'
 
+# Encode HTML with HTMLEntities
+Convert.encode('string')
+
+# Decode HTML, opposite of above
+Convert.decode('string')
+
+# Strip parameters from URL
+Convert.strip_params('URL string')
+
+# Sanitize HTML
+Convert.sanitize('HTML string')
+
+# Convert with Nokogiri, used with 'run'
+Convert.nokogiri('HTML string')
+
+# Run default converters. Pass :converters => [:auto_link, :decode]
+Convert.run('string')
+
 # URL to HTML link
 Convert.auto_link('https://crowdfundhq.com')
 
