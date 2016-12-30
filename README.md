@@ -14,32 +14,23 @@ or add to Gemfile.
 # Require convert if you're not using bundler
 require 'convert'
 
-# Encode HTML with HTMLEntities
-Convert.encode('string')
-
-# Decode HTML, opposite of above
-Convert.decode('string')
-
-# Strip parameters from URL
-Convert.strip_params('URL string')
-
-# Sanitize HTML
-Convert.sanitize('HTML string')
-
-# Convert with Nokogiri, used with 'run'
-Convert.nokogiri('HTML string')
-
 # Run default converters. Pass :converters => [:auto_link, :decode]
 Convert.run('string')
+
+# Convert with Nokogiri, used by 'run'
+Convert.nokogiri('HTML string')
 
 # URL to HTML link
 Convert.auto_link('https://crowdfundhq.com')
 
-# Embed iframe
-Convert.iframe_embed('https://crowdfundhq.com/campaigns/flatty.embed')
-
 # Embed dailymotion videos (https://dailymotion.com)
 Convert.dailymotion('string')
+
+# Decode HTML, opposite of above
+Convert.decode('string')
+
+# Encode HTML with HTMLEntities
+Convert.encode('string')
 
 # Remove embedded videos from emails
 Convert.email_escape('string')
@@ -62,6 +53,9 @@ Convert.html_escape('html')
 # Unescape HTML
 Convert.unescape_html('string')
 
+# Embed iframe
+Convert.iframe_embed('https://crowdfundhq.com/campaigns/flatty.embed')
+
 # Convert
 Convert.image_tag('https://crowdfundhq.com/logo.png')
 
@@ -76,6 +70,12 @@ Convert.liveleak('string')
 
 # Embed markdown with Redcarpet
 Convert.redcarpet('string')
+
+# Sanitize HTML
+Convert.sanitize('HTML string')
+
+# Strip parameters from URL
+Convert.strip_params('URL string')
 
 # Same as above, a few other options
 Convert.markdown('string')
