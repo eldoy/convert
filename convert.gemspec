@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'convert'
-  s.version     = '0.0.2'
-  s.date        = '2016-12-30'
+  s.version     = '0.1.0'
+  s.date        = '2017-01-04'
   s.summary     = "Convert strings and HTML to links and embedded content"
   s.description = "Easily convert any string and replace with links and embedded content from a long list of providers and libraries."
   s.authors     = ["Fugroup Limited"]
