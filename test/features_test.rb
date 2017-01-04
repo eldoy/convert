@@ -49,9 +49,9 @@ test 'hashtag'
 
 c = Convert.hashtag('string')
 
-test 'html_escape'
+test 'escape_html'
 
-c = Convert.html_escape('string')
+c = Convert.escape_html('string')
 
 test 'image_tag'
 

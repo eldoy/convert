@@ -1,7 +1,7 @@
 module Converters
 
   # Escape html
-  def html_escape(string, options = {})
+  def escape_html(string, options = {})
     options = {:map => {'&' => '&amp;', '>' => '&gt;', '<' => '&lt;', '"' => '&quot;' }}.merge(options)
 
     @regex = /[&"><]/

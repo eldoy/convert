@@ -48,7 +48,7 @@ Convert.google_maps('string')
 Convert.hashtag('#flat')
 
 # Escape HTML
-Convert.html_escape('html')
+Convert.escape_html('html')
 
 # Unescape HTML
 Convert.unescape_html('string')
@@ -71,8 +71,13 @@ Convert.liveleak('string')
 # Embed markdown with Redcarpet
 Convert.redcarpet('string')
 
-# Sanitize HTML
+# Sanitize HTML with the Sanitize gem
 Convert.sanitize('HTML string')
+
+# Sanitize config: :custom, :full, :linebreaks, :simple, :restricted, :basic, :relaxed
+# You can add your own config by adding a file like the ones here:
+# https://github.com/fugroup/convert/tree/master/lib/sanitizers
+Convert.sanitize('HTML string', :config => :custom)
 
 # Strip parameters from URL
 Convert.strip_params('URL string')
