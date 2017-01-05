@@ -17,7 +17,7 @@ end
 autoload :Nokogiri, 'nokogiri'
 
 # # # # # #
-# The Convert module is responsible for converting strings
+# The Convert class is responsible for converting strings into embedded, sanitized or new content
 #
 class Convert
 
