@@ -1,8 +1,10 @@
+root = Gem::Specification.find_by_name('convert').gem_dir
+
 # Require the converters
-Dir['./lib/converters/*.rb'].each{|f| require f}
+Dir["#{root}/lib/converters/*.rb"].each{|f| require f}
 
 # Require the sanitizers
-Dir['./lib/sanitizers/*.rb'].each{|f| require f}
+Dir["#{root}/lib/sanitizers/*.rb"].each{|f| require f}
 
 # Autoload for faster loading
 module Converters
