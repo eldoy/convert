@@ -5,7 +5,6 @@ Dir['./lib/converters/*.rb'].each{|f| require f}
 Dir['./lib/sanitizers/*.rb'].each{|f| require f}
 
 # Autoload for faster loading
-
 module Converters
   autoload :Redcarpet, 'redcarpet'
   autoload :Kramdown, 'kramdown'
