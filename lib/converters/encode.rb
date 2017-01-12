@@ -1,7 +1,9 @@
-module Converters
+module Convert
+  module Converters
 
-  def encode(string, options = {})
-    HTMLEntities.new.encode(string)
+    def encode(string, options = {})
+      HTMLEntities.new.encode(string)
+    end
+
   end
-
 end

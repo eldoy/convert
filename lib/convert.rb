@@ -6,27 +6,21 @@ Dir["#{root}/lib/converters/*.rb"].each{|f| require f}
 # Require the sanitizers
 Dir["#{root}/lib/sanitizers/*.rb"].each{|f| require f}
 
-# Autoload for faster loading
-module Converters
-  autoload :Redcarpet, 'redcarpet'
-  autoload :Kramdown, 'kramdown'
-  autoload :Rinku, 'rinku'
-  autoload :Sanitize, 'sanitize'
-  autoload :HTMLEntities, 'htmlentities'
-end
-autoload :Nokogiri, 'nokogiri'
+# Convert strings and HTML from a long list of converters
+# @homepage: https://github.com/fugroup/convert
+# @author:   Vidar <vidar@fugroup.net>, Fugroup Ltd.
+# @license:  MIT, contributions are welcome.
+module Convert
 
-# # # # # #
-# The Convert class is responsible for converting strings into embedded, sanitized or new content
-#
-class Convert
-
-  # # # # # #
-  # Convert strings and HTML from a long list of converters
-  # @homepage: https://github.com/fugroup/convert
-  # @author:   Vidar <vidar@fugroup.net>, Fugroup Ltd.
-  # @license:  MIT, contributions are welcome.
-  # # # # # #
+  # Autoload for faster loading
+  module Converters
+    autoload :Redcarpet, 'redcarpet'
+    autoload :Kramdown, 'kramdown'
+    autoload :Rinku, 'rinku'
+    autoload :Sanitize, 'sanitize'
+    autoload :HTMLEntities, 'htmlentities'
+  end
+  autoload :Nokogiri, 'nokogiri'
 
   # Some of the matchers are taken from https://github.com/dejan/auto_html
 

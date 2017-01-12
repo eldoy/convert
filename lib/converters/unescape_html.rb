@@ -1,11 +1,13 @@
-module Converters
+module Convert
+  module Converters
 
-  def unescape_html(string, options = {})
-    @regex = /(&lt;.*?[a-z]{0,12}?&gt;)+/i
+    def unescape_html(string, options = {})
+      @regex = /(&lt;.*?[a-z]{0,12}?&gt;)+/i
 
-    string.gsub(@regex) do |tag|
-      tag.gsub("&lt;", "<").gsub("&gt;", ">")
+      string.gsub(@regex) do |tag|
+        tag.gsub("&lt;", "<").gsub("&gt;", ">")
+      end
     end
-  end
 
+  end
 end
