@@ -1,3 +1,7 @@
+**Version 0.1.3** - *2016-11-01*
+
+- Made main class module instead of class
+
 **Version 0.1.2** - *2016-05-01*
 
 - Fixed gem files not being included
