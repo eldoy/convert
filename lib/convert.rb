@@ -19,12 +19,13 @@ module Convert
     autoload :Rinku, 'rinku'
     autoload :Sanitize, 'sanitize'
     autoload :HTMLEntities, 'htmlentities'
+    autoload :Nokogiri, 'nokogiri'
+    autoload :SimpleIDN, 'simpleidn'
   end
-  autoload :Nokogiri, 'nokogiri'
 
   # Some of the matchers are taken from https://github.com/dejan/auto_html
 
-  CONVERTERS = [:iframe_embed, :dailymotion, :email_escape, :flickr, :gist, :google_maps, :hashtag, :escape_html, :image_tag, :instagram, :liveleak, :markdown, :metacafe, :redcarpet, :soundcloud, :ted, :twitter, :video_embed, :vimeo, :vimeo_embed, :worldstar, :youtube, :youtube_embed, :youtube_js_api, :auto_link, :encode, :decode, :strip_params, :sanitize, :nokogiri]
+  CONVERTERS = [:iframe_embed, :dailymotion, :email_escape, :flickr, :gist, :google_maps, :hashtag, :escape_html, :image_tag, :instagram, :liveleak, :markdown, :metacafe, :redcarpet, :soundcloud, :ted, :twitter, :video_embed, :vimeo, :vimeo_embed, :worldstar, :youtube, :youtube_embed, :youtube_js_api, :auto_link, :encode, :decode, :strip_params, :sanitize, :scan, :to_ascii, :to_unicode]
 
   DEFAULT = [:dailymotion, :flickr, :gist, :google_maps, :instagram, :liveleak, :metacafe, :soundcloud, :ted, :twitter, :vimeo, :worldstar, :youtube, :auto_link]
 

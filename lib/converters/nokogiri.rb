@@ -5,7 +5,7 @@ module Convert
 
     # Scan a string with Nokogiri and convert if match string
     def scan(string, options = {})
-      return string if options[:converters].empty?
+      return string if !options[:converters] or options[:converters].empty?
 
       doc = Nokogiri::HTML.fragment(string)
 

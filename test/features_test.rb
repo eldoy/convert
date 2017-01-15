@@ -6,6 +6,10 @@ t = Convert.run('string')
 
 is t.strip, '<p>string</p>'
 
+t = Convert.run('string', :markdown => false)
+
+is t.strip, 'string'
+
 test 'auto_link'
 
 c = Convert.auto_link('http://crowdfundhq.com')
@@ -142,3 +146,11 @@ c = Convert.youtube_image('string')
 test 'youtube_js_api'
 
 c = Convert.youtube_js_api('string')
+
+test 'simpleidn to_ascii'
+
+c = Convert.to_ascii('string')
+
+test 'simpleidn to_unicode'
+
+c = Convert.to_unicode('string')

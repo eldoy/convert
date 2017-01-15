@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'convert'
-  s.version     = '0.1.3'
-  s.date        = '2017-01-12'
+  s.version     = '0.1.4'
+  s.date        = '2017-01-15'
   s.summary     = "Convert strings and HTML to links and embedded content"
   s.description = "Easily convert any string and replace with links and embedded content from a long list of providers and libraries."
   s.authors     = ["Fugroup Limited"]
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'sanitize', '~> 4.4'
   s.add_runtime_dependency 'htmlentities', '~> 4.3'
   s.add_runtime_dependency 'nokogiri', '~> 1.6'
+  s.add_runtime_dependency 'simpleidn', '>= 0'
   s.add_development_dependency 'futest', '>= 0'
 
   s.email       = 'mail@fugroup.net'

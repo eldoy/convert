@@ -1,3 +1,8 @@
+**Version 0.1.3** - *2016-15-01*
+
+- Added simpleidn support with to_ascii and to_unicode
+- Fixed nil exception when converter list for scan is empty
+
 **Version 0.1.3** - *2016-11-01*
 
 - Made main class module instead of class

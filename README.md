@@ -18,7 +18,7 @@ require 'convert'
 Convert.run('string')
 
 # Convert with Nokogiri, used by 'run'
-Convert.nokogiri('HTML string')
+Convert.scan('HTML string')
 
 # URL to HTML link
 Convert.auto_link('https://crowdfundhq.com')
@@ -124,6 +124,11 @@ Convert.youtube_image('string')
 # Embed Youtube JS API
 Convert.youtube_js_api('string')
 
+# Convert Chinese and other non-standard characters to IDN
+Convert.to_ascii('string')
+
+# Reverse IDN conversion
+Convert.to_unicode('string')
 ```
 
 Created and maintained by [Fugroup Ltd.](https://www.fugroup.net) We are the creators of [CrowdfundHQ.](https://crowdfundhq.com)
