@@ -10,7 +10,7 @@ class Sanitize
       ],
 
       :attributes => {
-        :all => ['dir', 'lang', 'title', 'class', 'style', 'id'],
+        :all => ['dir', 'lang', 'title', 'class', 'style', 'id', 'draggable', 'contenteditable'],
         'a' => ['href', 'target'],
         'blockquote' => ['cite'],
         'col' => ['span', 'width'],
@@ -28,7 +28,7 @@ class Sanitize
         'th' => ['abbr', 'axis', 'colspan', 'rowspan', 'scope', 'width'],
         'time' => ['datetime', 'pubdate'],
         'ul' => ['type'],
-        'iframe' => ['width', 'height', 'src', 'allowFullScreen']
+        'iframe' => ['width', 'height', 'src', 'allowFullScreen', 'allowfullscreen', 'frameborder'],
       },
 
       :protocols => {
@@ -38,7 +38,11 @@ class Sanitize
         'q' => {'cite' => ['http', 'https', :relative]}
       },
 
-      :add_attributes => {}
+      :add_attributes => {},
+
+      :css => {
+        :properties => %w[width height]
+      }
     }
 
   end

@@ -1,4 +1,8 @@
-**Version 0.1.3** - *2016-15-01*
+**Version 0.1.5** - *2016-28-01*
+
+- Added CSS styles to full and custom configs
+
+**Version 0.1.4** - *2016-15-01*
 
 - Added simpleidn support with to_ascii and to_unicode
 - Fixed nil exception when converter list for scan is empty

@@ -28,7 +28,7 @@ class Sanitize
         'th' => ['abbr', 'axis', 'colspan', 'rowspan', 'scope', 'width'],
         'time' => ['datetime', 'pubdate'],
         'ul' => ['type'],
-        'iframe' => ['width', 'height', 'src', 'allowFullScreen'],
+        'iframe' => ['width', 'height', 'src', 'allowFullScreen', 'allowfullscreen', 'frameborder'],
         'script' => ['src', 'type']
       },
 
@@ -39,7 +39,11 @@ class Sanitize
         'q' => {'cite' => ['http', 'https', :relative]}
       },
 
-      :add_attributes => {}
+      :add_attributes => {},
+
+      :css => {
+        :properties => %w[width height]
+      }
     }
 
   end

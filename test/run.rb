@@ -6,6 +6,7 @@ include Futest::Helpers
 begin
   start = Time.now
   [
+    'sanitize',
     'features'
   ].each{|t| require_relative "#{t}_test"}
 rescue => x
