@@ -57,6 +57,10 @@ test 'escape_html'
 
 c = Convert.escape_html('string')
 
+test 'facebook_embed'
+
+c = Convert.facebook_embed('string')
+
 test 'image_tag'
 
 c = Convert.image_tag('https://crowdfundhq.com')

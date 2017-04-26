@@ -4,7 +4,7 @@ module Convert
     def flickr(string, options = {})
       # https://www.flickr.com/photos/fotokunstsusanne/23160248869
 
-      {:maxwidth => nil, :maxheight => nil, :link_options => {}}.merge(options)
+      options = {:maxwidth => nil, :maxheight => nil, :link_options => {}}.merge(options)
       @regex = %r{https?://(www\.)?flickr\.com/photos/[^\s<]*}
 
       string.gsub(@regex) do |match|

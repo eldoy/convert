@@ -15,7 +15,7 @@ module Convert
         http.use_ssl = true
 
         response = JSON.parse(http.get(uri.request_uri).body)
-        response["html"]
+        response['html']
       end
     end
 
