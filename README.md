@@ -35,6 +35,9 @@ Convert.encode('string')
 # Remove embedded videos from emails
 Convert.email_escape('string')
 
+# Embed facebook video (https://www.facebook.com)
+Convert.facebook_embed('string')
+
 # Embed flickr content (https://flickr.com)
 Convert.flickr('string')
 
