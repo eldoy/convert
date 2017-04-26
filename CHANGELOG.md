@@ -1,8 +1,13 @@
-**Version 0.1.5** - *2016-28-01*
+**Version 0.1.6** - *2017-26-04*
+
+- Added Facebook embed
+- Fixed an issue with vimeo_embed merge options
+
+**Version 0.1.5** - *2017-28-01*
 
 - Added CSS styles to full and custom configs
 
-**Version 0.1.4** - *2016-15-01*
+**Version 0.1.4** - *2017-15-01*
 
 - Added simpleidn support with to_ascii and to_unicode
 - Fixed nil exception when converter list for scan is empty
