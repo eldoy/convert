@@ -26,7 +26,7 @@ Convert.auto_link('https://crowdfundhq.com')
 # Embed dailymotion videos (https://dailymotion.com)
 Convert.dailymotion('string')
 
-# Decode HTML, opposite of above
+# Decode HTML, opposite of below
 Convert.decode('string')
 
 # Encode HTML with HTMLEntities
