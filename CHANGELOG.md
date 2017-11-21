@@ -1,3 +1,7 @@
+**Version 0.1.7** - *2017-21-11*
+
+- Allow custom sanitize
+
 **Version 0.1.6** - *2017-26-04*
 
 - Added Facebook embed
